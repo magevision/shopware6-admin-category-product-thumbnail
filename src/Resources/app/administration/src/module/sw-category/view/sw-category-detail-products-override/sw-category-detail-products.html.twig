@@ -1,0 +1,13 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_category_detail_product_assignment_column_name %}
+    <template #[nameColumn]="{ item, column }">
+        <sw-media-preview-v2 :source="item.cover ? item.cover.media : null"/>
+        <router-link
+                :to="{ name: column.routerLink, params: { id: item.id } }"
+        >
+            <sw-product-variant-info :variations="item.options">
+                {{ item.name || item.translated.name }}
+            </sw-product-variant-info>
+        </router-link>
+    </template>
+{% endblock %}

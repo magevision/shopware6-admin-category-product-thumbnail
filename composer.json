@@ -1,0 +1,38 @@
+{
+  "name": "magevision/shopware6-admin-category-product-thumbnail",
+  "description": "Admin Category Product Thumbnail for Shopware 6",
+  "version": "1.0.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MageVision",
+      "role": "Manufacturer"
+    }
+  ],
+  "type": "shopware-platform-plugin",
+  "autoload": {
+    "psr-4": {
+      "MageVision\\AdminCategoryProductThumbnail\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": "~6.5.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "MageVision\\AdminCategoryProductThumbnail\\MageVisionAdminCategoryProductThumbnail",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "(c) by MageVision",
+    "label": {
+      "en-GB": "MageVision Admin Category Product Thumbnail",
+      "de-DE": "MageVision Produktvorschau Bild in Kategorie Admin"
+    },
+    "description": {
+      "en-GB": "Admin Category Product Thumbnail",
+      "de-DE": "Produktvorschau Bild in Kategorie Admin"
+    },
+    "manufacturerLink": {
+      "en-GB": "https://www.magevision.com/",
+      "de-DE": "https://www.magevision.com/"
+    }
+  }
+}
